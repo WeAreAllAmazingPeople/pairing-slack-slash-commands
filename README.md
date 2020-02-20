@@ -24,6 +24,6 @@ slash commands for a slack team that enable users to:
 * Add Procfile
 * Add requirements.txt file
 * Add environment variable (Config Vars) "VERIFICATION_TOKEN"
-* Add environment variable (Config Vars) "DBNAME", "USERNAME" & "PASSWORD"
+* ~~Add environment variable (Config Vars) "DBNAME", "USERNAME" & "PASSWORD"~~
 * Add add-on "heroku-postgresql"
 ** Config Var "DATABASE_URL" is added automatically by the add-on
