@@ -11,7 +11,8 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 dotenv.load_dotenv(dotenv_path)
 verification_token = os.environ['VERIFICATION_TOKEN']
 
-conn = psycopg2.connect(host=os.environ['DATABASE_URL'],database=os.environ['DBNAME'],user=os.environ['USERNAME'],password=os.environ['PASSWORD'])
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor);
 
 def performQuery(sqlText, params):
