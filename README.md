@@ -27,3 +27,10 @@ slash commands for a slack team that enable users to:
 * ~~Add environment variable (Config Vars) "DBNAME", "USERNAME" & "PASSWORD"~~
 * Add add-on "heroku-postgresql"
 ** Config Var "DATABASE_URL" is added automatically by the add-on
+
+## Slack instructions
+* Browse to https://api.slack.com/apps and Create a New App
+* Add Slash Commands
+* Install to your workspace
+
+
